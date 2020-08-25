@@ -1,0 +1,34 @@
+# The URL the site will be built for
+base_url = "http://fnobject.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+theme = "even"
+
+title = "中年码农@NZ"
+
+taxonomies = [
+    # You can enable/disable RSS
+    {name = "categories", rss = true},
+    {name = "tags", rss = true},
+]
+
+[extra]
+
+even_menu = [
+    {url = "$BASE_URL", name = "首页"},
+    {url = "$BASE_URL/categories", name = "分类"},
+    {url = "$BASE_URL/tags", name = "标签"},
+    {url = "$BASE_URL/about", name = "关于"},
+]
+# Put all your custom variables here
+katex_enable = true
+katex_auto_render = true
